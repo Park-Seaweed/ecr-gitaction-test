@@ -9,9 +9,6 @@ on:
       - main
 env:
   AWS_REGION: ap-northeast-2
-  # ECR_REGISTRY: 222026462311.dkr.ecr.ap-northeast-2.amazonaws.com
-  # ECR_REPOSITORY: my-test
-  # IMAGE_TAG: latest
 jobs:
   deploy:
     name: Deploy
