@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
     });
   });
 
-  res.status(200).send(`이 서버의 IP주소는:${address}입니다`);
+  res.status(200).ok(`이 서버의 IP주소는:${address}입니다`);
 });
 
 app.listen(port, () => {
