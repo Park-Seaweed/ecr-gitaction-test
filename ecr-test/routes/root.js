@@ -1,5 +1,5 @@
-'use strict';
 const os = require('os');
+
 module.exports = async function (fastify, opts) {
   fastify.get('/', async function (request, reply) {
     const interfaces = os.networkInterfaces();
@@ -13,6 +13,6 @@ module.exports = async function (fastify, opts) {
       });
     });
 
-    reply.code(200).send(`이서버의 IP는:${address}`);
+    return `이서버의 IP는:${address}`;
   });
 };
