@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
   res.json({ data: 'hello world' });
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`listening port:${port} `);
 });
